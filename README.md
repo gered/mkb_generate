@@ -44,6 +44,17 @@ replaces it. Every other line is copied to the output MKB file as-is.
 
 **mkb_generate** will overwrite the existing MKB file if one is there.
 
+Also, note that your "files" section as specified in 
+**mkb_template.txt** can also contain files if you absolutely need to
+specifically list some by hand. For example, in my projects my files
+section usually looks like this:
+
+	files
+	{
+		MyProjectName.defines.txt
+		%%SOURCE_FILES%%	
+	}
+
 ## Configuration
 
 At the top of the **mkb_generate** script there are some config
