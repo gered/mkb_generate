@@ -1,4 +1,4 @@
-## Marmalade MKB Source File Listing Generator
+# Marmalade MKB Source File Listing Generator
 
 This is a script which allows you to automatically populate a list
 of source files/directories in your MKB files. The source files may
@@ -9,7 +9,7 @@ comes to wanting to specify source files which are organized
 into many different directories and subdirectories. This script
 helps work around this limitation.
 
-# Usage
+## Usage
 
 You first create a template file **mkb_template.txt** for your MKB.
 This will contain all the normal things found in an MKB file like 
@@ -44,7 +44,7 @@ replaces it. Every other line is copied to the output MKB file as-is.
 
 **mkb_generate** will overwrite the existing MKB file if one is there.
 
-# Configuration
+## Configuration
 
 At the top of the **mkb_generate** script there are some config
 variables that can and should be modified to your needs.
@@ -55,7 +55,7 @@ variables that can and should be modified to your needs.
 
 The rest of the config variables probably don't need to be modified.
 
-# How PROJECT_NAME is Automatically Set
+## How PROJECT_NAME is Automatically Set
 
 This is largely based on my own personal conventions and may not
 apply to everyone. If that is the case, you can just manually set
@@ -63,7 +63,8 @@ the value to whatever you need.
 
 By default, the **mkb_generate** script will automatically set the
 **PROJECT_NAME** value based on an assumed directory structure
-for your project, similar to the one shown below:
+for your project, similar to the one shown below which is how all
+my projects are typically set up:
 
 	/some/directory/containing
 		/ProjectName
