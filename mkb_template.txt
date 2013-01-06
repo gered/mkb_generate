@@ -1,0 +1,18 @@
+debug_define DEBUG
+
+files
+{
+	%%SOURCE_FILES%%
+}
+
+includepaths
+{
+}
+
+assets
+{
+	(../assets)
+	.
+}
+
+option s3e-data-dir=../assets
